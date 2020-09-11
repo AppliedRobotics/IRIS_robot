@@ -1,0 +1,9 @@
+<launch>
+
+	<node pkg="bs_arm_controll" type="dataBS.py" name="bs_controll" output="screen"/>
+	<node pkg="bs_arm_controll" type="gripper.py" name="gripper_controll" output="screen"/>
+	<node pkg="bs_arm_controll" type="main_BS.py" name="mainBS" output="screen"/>
+
+	<include file="$(find arm_controll)/launch/arms.launch"/>
+	
+</launch>

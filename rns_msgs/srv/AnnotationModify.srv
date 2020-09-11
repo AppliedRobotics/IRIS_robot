@@ -1,0 +1,9 @@
+# Service to modify annotation set
+AnnotationUpdate update
+bool updateByName
+---
+# Current annotation revision
+int64 revision
+
+# Assigned annotation IDs
+int64[] ids

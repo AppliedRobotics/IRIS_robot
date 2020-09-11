@@ -1,0 +1,14 @@
+<launch>
+  <!-- launch to start gmapping  -->
+	<arg name="scan" default="scan" />
+
+	<include file="$(find navigation)/launch/gmapping_low.launch">
+	    <arg name="scan" value="$(arg scan)" />
+	</include> 
+	<include file="$(find navigation)/launch/move_base/move_base.xml">
+	    <arg name="scan" value="$(arg scan)" />
+	</include>
+
+	<node pkg="navigation" type="move_base_controller.py" name="mb_con">
+	</node>
+</launch>

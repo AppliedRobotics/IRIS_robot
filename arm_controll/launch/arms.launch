@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="arm_controll" type="arm_controll_test_node" name="arms" output="screen">
+		<param name="disable_torque" value="false"/>
+		<param name="dxl_port" value="/dev/ttyACM0"/>
+	</node>
+</launch>

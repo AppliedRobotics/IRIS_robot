@@ -1,0 +1,8 @@
+<launch>
+	<include file="$(find rplidar_ros)/launch/rplidar_a3.launch">	
+	</include>
+	<include file="$(find roboclaw_node)/launch/roboclaw.launch"/>
+	<include file="$(find recognizer)/launch/object_recognize.launch"/>
+	<include file="$(find bs_arm_controll)/launch/bs_arm_launch.launch"/>
+	<include file="$(find navigation)/launch/gmapping_low.launch"/>
+</launch>

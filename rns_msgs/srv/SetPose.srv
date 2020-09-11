@@ -1,0 +1,15 @@
+Header header
+# Initial robot pose. Covariance describes search area
+geometry_msgs/PoseWithCovariance pose
+# State to switch after successfull map alignment
+# Available states are defined at rnsslam/MapperState
+int32 desiredState
+--- 
+# Best matching score
+float32 score
+# If map pose was foundMapperStateDynamic
+bool found
+# Matched pose
+geometry_msgs/PoseWithCovariance pose
+# Contains resulting message
+string message

@@ -1,0 +1,31 @@
+# Goal
+geometry_msgs/PoseStamped goal
+# Maximum distance for path search
+float32 maxDistance
+# Minimal distance to be reached
+float32 minDistance
+# Set to true if target orientation is necessary
+bool oriented
+# Set to true if search can enter unknown areas
+bool canVisitUnknown
+# ID of object(s) to be followed
+int64[] objectID
+---
+# Result
+# Arrival error
+float32 distanceError
+# If task is complete successfully
+bool complete
+---
+# Progress
+bool recalculation
+int32 obstacleIndex
+float32 obstacleDistance
+# Current waypoint, if there is a waypoint path
+int32 waypoint
+# Mover state
+int32 moverState
+# Message for status update
+string msg
+# Current path
+rns_msgs/AnnotatedPath path

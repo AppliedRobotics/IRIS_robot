@@ -1,0 +1,18 @@
+[submodule "DynamixelSDK"]
+	path = DynamixelSDK
+	url = https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+[submodule "dynamixel-workbench"]
+	path = dynamixel-workbench
+	url = https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
+[submodule "rplidar_ros"]
+	path = rplidar_ros
+	url = https://github.com/robopeak/rplidar_ros.git
+[submodule "ros_astra_camera"]
+	path = ros_astra_camera
+	url = https://github.com/orbbec/ros_astra_camera.git
+[submodule "usb_cam"]
+	path = usb_cam
+	url = https://github.com/ros-drivers/usb_cam.git
+[submodule "dynamixel-workbench-msgs"]
+	path = dynamixel-workbench-msgs
+	url = https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git

@@ -1,0 +1,12 @@
+<launch>
+   <arg name="use_amcl" default="true"/>
+   <arg name="map_name" default="my_map"/>
+
+	
+   <include file="$(find navigation)/launch/navigation.launch" unless="$(arg use_amcl)"/> 
+   <include file="$(find navigation)/launch/navigation_amcl.launch" if="$(arg use_amcl)">
+	<arg name="map_name" value="$(arg map_name)"/>
+   </include> 
+   
+
+</launch>

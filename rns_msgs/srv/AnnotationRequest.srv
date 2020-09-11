@@ -1,0 +1,9 @@
+bool full 	# Do we need all annotations?
+int64[] ids # IDs we want to get. If full=true, we will get all current annotations
+
+# optional field:
+string filter
+
+bool restricted_only # We need only restricted zones
+---
+AnnotationUpdate update
